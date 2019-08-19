@@ -7,6 +7,9 @@ This is a lerna monorepo where "b-package" has a dependency on "a-package".  In 
 To reproduce:
 
 1. Open this project in IntelliJ IDEA
+2. `npm install`
+3. `lerna bootstrap --hoist`
+4. `lerna exec --ignore "root" -- "tsc -b"`
 2. Navigate to `b-package/src/b.ts`
 3. Attempt to "go to declaration" of the `aFn()` function.  Observe that it navigates you correctly to `a-package/src/a.ts`
 4. Attempt to "find usages" of the `aFn()` function.  Notice that it returns zero results.  
