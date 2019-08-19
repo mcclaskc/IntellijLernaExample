@@ -13,3 +13,5 @@ To reproduce:
 2. Navigate to `b-package/src/b.ts`
 3. Attempt to "go to declaration" of the `aFn()` function.  Observe that it navigates you correctly to `a-package/src/a.ts`
 4. Attempt to "find usages" of the `aFn()` function.  Notice that it returns zero results.  
+
+Since the "go to declaration" works, I know Intellij is aware of the dependency in one direction, I just need to figure out how to make it aware in the other "find usages" direction.
