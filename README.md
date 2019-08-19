@@ -1,6 +1,6 @@
 # Intellij Lerna Example
 
-See stack overflow question [here](LINK TDB)
+See stack overflow question [here](https://stackoverflow.com/questions/57561447/intellij-find-usages-doesnt-work-across-lerna-packages)
 
 This is a lerna monorepo where "b-package" has a dependency on "a-package".  In IntelliJ, I am observing a bug (or probably a misconfiguration on my part), where "find usages" does not work across the lerna packages.
 
